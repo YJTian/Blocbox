@@ -3,12 +3,12 @@ html, body {
 }
 
 body {
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	font-family: 'Nunito', sans-serif, Helvetica, Arial, sans-serif;
 	color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
+	font-family: 'Share Tech Mono', monospace, Helvetica, Arial, sans-serif;
 }
 
 h1 {
