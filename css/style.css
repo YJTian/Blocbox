@@ -15,7 +15,27 @@ h1 {
 	font-size: 48px;
 	font-weight: normal;
 	margin-bottom: 5px;
-	
+	 -webkit-animation: fadein 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 h2{
