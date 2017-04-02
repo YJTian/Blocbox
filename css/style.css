@@ -124,7 +124,7 @@ header > .container {
 /* jumbotron */
 
 .jumbotron {
-	background-image: url(http://wx4.sinaimg.cn/large/6de62054gy1fe7rr4brmsj213z0jkhdt.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/25590792/24584547/a033eccc-1736-11e7-9667-177e1501e9b3.png);
 	background-size: cover;
 	background-repeat: none;
 	text-align:center;
@@ -133,7 +133,7 @@ header > .container {
 }
 
 .jumbotron .container {
-	padding: 100px 0;
+	padding: 90px 0;
 }
 
 .jumbotron p {
@@ -142,10 +142,14 @@ header > .container {
 	margin: 25px 0 20px;
 }
 
+#lastline {
+	margin: 20px auto 30px;
+}
+
 .jumbotron img {
 	display: block;
 	margin: 0 auto;
-	max-width: 430px;
+	max-width: 410px;
 }
 
 .jumbotron p::first-line {
@@ -158,10 +162,15 @@ header > .container {
 	font-size: 21px;
 	font-weight: normal;
 	text-decoration:none;
-	padding: 10px 50px;
+	padding: 8px 40px;
 	background: #FBB03B;
-	border: none;
+	border: none;	
+}
+.btn:hover {
 	box-shadow: 2px 2px;
+}
+.btn:active {
+	box-shadow: 0;
 }
 
 /* Media queries */
@@ -180,9 +189,6 @@ header > .container {
    .one-third {
      width:29.33333%;
    }
-   .one-fourth {
-     width:21%;
-   }
  }
  @media (min-width: 1200px) {
    .container {
@@ -190,6 +196,62 @@ header > .container {
    }
  }
 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	header nav .one-half {
+		width: 46%;
+	}
+	header nav .one-third {
+     width:29.33333%;
+    }
+   
+	#navisignup {
+		display: none;
+	}
+	#navisignin {
+		display: none;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width: 992px) {
+	.one-half {
+		width: 46%;
+	}
+	 .one-third {
+     width:29.33333%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+     width:29.33333%;
+    }
+	#navisignup {
+		display: inline;
+	}
+	#navisignin {
+		display: inline;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+	
+}
 
 
 
