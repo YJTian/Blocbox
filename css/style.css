@@ -25,7 +25,7 @@ h2{
 }
 
 p{
-	font-size: 21px;
+	font-size: 16px;
 	line-height: 19px;
 	font-weight: 100;
 }
@@ -48,7 +48,7 @@ p{
 }
 
 .one-half, .one-third, .one-fourth {
-   width:96%;
+   width:100%;
    float:left;
    position:relative;
    min-height: 1px;
@@ -56,8 +56,205 @@ p{
  }
 
 
+a {
+	font-family: 'share tech mono', monospace;
+}
+
+a:link {
+	text-decoration: none;
+	color:#333333;
+}
+
+/* Header */
+	/* header general */
+header {
+	color:#333333;
+	background: #ffffff;
+	padding: 12px 0;
+}
+
+	/* header logo */
+
+header nav .site-logo img {
+	text-align: center;
+	height: 35px;
+}
+
+	/* header main navigation */
+
+header nav {
+	padding:1em 0;
+}
+header .one-half {
+	margin-bottom: 0px;
+}
+header nav ul {
+	text-align: right;
+	float: right;
+	margin:0;
+	position: relative;
+    list-style: none;
+    display: inline-block;
+}
+header nav ul > li {
+	font-size: 16px;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+#signup {
+	margin: 0;
+}
+header nav ul > li.btn-outline {
+	padding: 3px 25px;
+	border:0.5px solid #FBB03B;
+}
+header nav ul > li.btn-outline:hover {
+	background:#FBB03B;
+}
+header nav ul > li a img{
+	height: 25px;
+}
+header > .container {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 
 
+/* jumbotron */
+
+.jumbotron {
+	background-image: url(https://cloud.githubusercontent.com/assets/25590792/24584547/a033eccc-1736-11e7-9667-177e1501e9b3.png);
+	background-size: cover;
+	background-repeat: none;
+	text-align:center;
+	display:block;
+	position: relative;
+}
+
+.jumbotron .container {
+	padding: 90px 0;
+}
+
+.jumbotron p {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 25px 0 20px;
+}
+
+#lastline {
+	margin: 20px auto 30px;
+}
+
+.jumbotron img {
+	display: block;
+	margin: 0 auto;
+	max-width: 410px;
+}
+
+.jumbotron p::first-line {
+	margin-top: 300px;
+}
+
+/* BUTTONS */
+.btn {
+	color: #333333;
+	font-size: 21px;
+	font-weight: normal;
+	text-decoration:none;
+	padding: 8px 40px;
+	background: #FBB03B;
+	border: none;	
+}
+.btn:hover {
+	box-shadow: 2px 2px;
+}
+.btn:active {
+	box-shadow: 0;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+@media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	header nav .one-half {
+		width: 46%;
+	}
+	header nav .one-third {
+     width:29.33333%;
+    }
+   
+	#navisignup {
+		display: none;
+	}
+	#navisignin {
+		display: none;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width: 992px) {
+	.one-half {
+		width: 46%;
+	}
+	 .one-third {
+     width:29.33333%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+     width:29.33333%;
+    }
+	#navisignup {
+		display: inline;
+	}
+	#navisignin {
+		display: inline;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.one-half {
+		width: 46%;
+	}
+	.one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+	
+}
 
 
 
