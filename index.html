@@ -4,74 +4,76 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title> Save, share and collaborate | Blocbox</title>
+	<title> Blocbox | Save, share and collaborate</title>
 
 	<!-- Google Fonts -->
-
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,800|Share+Tech+Mono" rel="stylesheet" type='text/css'>
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
+
 <!-- hero -->
 <header>
 	<nav class="container">
 		<div class="one-half">
-			<a href="index.html" class="site-logo"><img src="images/logo.png" alt="Blocbox" /></a>
+		<a href="index.html" class="site-logo"><img src="https://cloud.githubusercontent.com/assets/25590792/24567355/f46f2e4c-1622-11e7-9728-b1aa97e87bcd.png" alt="Blocbox" /></a>
 		</div>
 		<div class="one-half">
-			<ul class="nav nav-pills">
-				<li class="btn-outline"><a href="signup.html">sign up</a></li>
-				<li><a href="signin.html">sign in</a></li>
-				<li><a href="#"><img src="https://cloud.githubusercontent.com/assets/25590792/24525825/72e0c3c0-1561-11e7-864e-376abc9a2dd0.png" alt="Menu" /></a></li>
-			</ul>
+		<ul class="nav right">
+			<li class="btn-outline" id="signup"><a href="signup.html">sign up</a></li>
+			<li><a href="signin.html" id="signin">sign in</a></li>
+			<li><a href="#" id="menu"><img src="https://cloud.githubusercontent.com/assets/25590792/24525825/72e0c3c0-1561-11e7-864e-376abc9a2dd0.png" alt="Menu" /></a></li>
+		</ul>
 		</div>
 	</nav>
-
-	<div class="container hero">
-		<p>Blocbox let you</p>
-		<img src="header layer.png" alt="Header">
-		<p>whenever and wherever.</p>
-		<p><a href="signup.html" class="btn">Sign Up</a></p>
-	</div>
 </header>
+
+<div class="jumbotron">
+	<div class="container">
+		<p>Blocbox let you</p>
+		<img src="https://cloud.githubusercontent.com/assets/25590792/24567832/f22b3eee-1624-11e7-8dbf-a540fc611c03.png" alt="Header">
+		<p id="lastline">whenever and wherever.</p>
+		<a href="signup.html" class="btn">sign up for free</a>
+	</div>
+</div>
 
 <main role="main">
 	<!-- benefits -->
 	<section class="benefits">
 		<ul class="container">
-				<div class="one-half">
-					<li><h2>Take notes,</h2></li>
-					<li><h2>Save images,</h2></li>
-					<li><h2>Save links.</h2></li>
-					<p>Using Markdown, you can create and format simple text­based documents. Store your images, screenshots, bookmarks, notes, links with blocbox.</p>
-				</div>
-				<div class="one-half">
-					<img src="feature1" alt="TakeNote" />
-				</div>
-				<div class="one-half">
-					<img src="feature2" alt="Collaborate">
-				</div>
-				<div class="one-half">
-					<li><h2>Share with others,</h2></li>
-					<li><h2>Collaborate on tasks.</h2></li>
-					<p>Share your thoughts and discoveries with anyone, and recieve comments. Invite others to initiate collaborative tasks, and work seamlessly with your group.</p>
-				</div>
-				<div class="one-half">
-					<li><h2>Save for later,</h2></li>
-					<li><h2>Sync to devices.</h2></li>
-					<p>Save content from your browser and applications, and view later. Have your collection in all your devices instantly.</p>
-				</div>
-				<div class="one-half">
-					<img src="feature3" alt="Organize">
-				</div>
-				<div>
-					<h3>write + save + organize + share + collabrate</h3>
-					<h3>on all devices.</h3>
-				</div>
+			<div class="one-half">
+				<li><h2>Take notes,</h2></li>
+				<li><h2>Save images,</h2></li>
+				<li><h2>Save links.</h2></li>
+				<p>Using Markdown, you can create and format simple text­based documents. Store your images, screenshots, bookmarks, notes, links with blocbox.</p>
+			</div>
+			<div class="one-half">
+				<img src="feature1" alt="TakeNote" />
+			</div>
+			<div class="one-half">
+				<img src="feature2" alt="Collaborate">
+			</div>
+			<div class="one-half">
+				<li><h2>Share with others,</h2></li>
+				<li><h2>Collaborate on tasks.</h2></li>
+				<p>Share your thoughts and discoveries with anyone, and recieve comments. Invite others to initiate collaborative tasks, and work seamlessly with your group.</p>
+			</div>
+			<div class="one-half">
+				<li><h2>Save for later,</h2></li>
+				<li><h2>Sync to devices.</h2></li>
+				<p>Save content from your browser and applications, and view later. Have your collection in all your devices instantly.</p>
+			</div>
+			<div class="one-half">
+				<img src="feature3" alt="Organize">
+			</div>
+			<div>
+				<h3>write + save + organize + share + collabrate</h3>
+				<h3>on all devices.</h3>
+			</div>
 		</ul>
 	</section>
 	<!-- testimonials -->
@@ -116,7 +118,7 @@
 				</div>
 			</li>
 			<li class="one-third">
-				<div class="box">
+				<div class="box middle">
 					<h4>expert</h4>
 					<h2>$ 10/mo</h2>
 					<ul>
@@ -130,11 +132,10 @@
 		</ul>
 	</section>
 	<section>
-		<a href="signup.html" class="btn">sign up</a>
-		<p>and enjoy 15 days free trial of EXPERT PLAN.</p>
-	</section>
-	<section class="questions">
-		<a href="questions" class="btn">question?</a>
+		<div class="container">
+			<p><a href="signup.html" class="btn">sign up</a></p>
+			<p>with 15 days free trial of EXPERT PLAN!</p>
+		</div>
 	</section>
 </main>
 <!-- footer -->
