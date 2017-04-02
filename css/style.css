@@ -173,6 +173,39 @@ header > .container {
 	box-shadow: 0;
 }
 
+/* Main */
+	/* icons */
+main .benefits ul {
+	color: #333333;
+	list-style: none;
+	text-align: center;
+	margin:30px 0;
+	padding:0;
+}
+
+main .benefits ul > li {
+	vertical-align: middle;
+	display: inline-block;
+	padding:10px 10px;
+}
+
+main .benefits .rectangle {
+	display: block;
+	margin: 0 auto;
+}
+
+	/* text */
+main .benefits h2 {
+	font-family: 'Nunito', sans-serif, Helvetica;
+	font-size: 28px;
+	margin: 10px 10px;
+}
+
+main .benefits ul div .feature1+.feature3 {
+	text-align: right;
+}
+
+
 /* Media queries */
 @media (min-width: 768px) {
    .container {
