@@ -489,6 +489,9 @@ footer nav ul li a {
 	#navisignin {
 		display: none;
 	}
+	 .jumbotron img {
+    	width: 50%;
+    }
 }
 
 @media only screen and (min-width : 768px) and (max-width: 992px) {
@@ -503,6 +506,9 @@ footer nav ul li a {
     }
     .span_1_of_9 {
     	width: 9.688%;
+    }
+    .jumbotron img {
+    	width: 50%;
     }
 }
 
