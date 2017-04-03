@@ -407,6 +407,7 @@ header > .container {
 }
 .bottomsignup .btn {
 	padding: 8px 80px;
+	font-size: 28px;
 }
 /* question */
 .question {
@@ -425,25 +426,38 @@ header > .container {
 /* footer */
 footer {
 	margin: 200px auto 10px;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
 }
 footer .left-footer-block {
-	vertical-align: bottom;
+	text-align: left;
+	font-size: 14px;
 }
 
 footer nav {
 	vertical-align: bottom;
+	text-align: right;
 }
 
 footer nav ul {
 	display: inline-block;
 	list-style: none;
+	text-align: right;
 }
 footer nav ul li {
-	padding-top: 5px;
+	display: inline-block;
+	padding-right: 10px;
 }
 footer nav ul li a {
+	color:#333333;
 	display: inline-block;
+	font-size: 14px;
 }
+footer nav ul li a {
+	padding-left: 8px;
+}
+
 /* Media queries */
 @media (min-width: 768px) {
    .container {
