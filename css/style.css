@@ -47,7 +47,7 @@ p{
 	clear: both;
 }
 
-.one-half, .one-third, .one-fourth {
+.one-half, .one-third, .one-fourth, .span_1_of_9, .span_4_of_9 {
    width:100%;
    float:left;
    position:relative;
@@ -77,7 +77,8 @@ header {
 
 header nav .site-logo img {
 	text-align: center;
-	height: 35px;
+	height: 25px;
+	vertical-align: center;
 }
 
 	/* header main navigation */
@@ -121,7 +122,7 @@ header > .container {
 }
 
 
-/* jumbotron */
+	/* jumbotron */
 
 .jumbotron {
 	background-image: url(https://cloud.githubusercontent.com/assets/25590792/24584547/a033eccc-1736-11e7-9667-177e1501e9b3.png);
@@ -173,39 +174,276 @@ header > .container {
 	box-shadow: 0;
 }
 
-/* Main */
+/* Features */
+
 	/* icons */
-main .benefits ul {
+.benefits ul {
 	color: #333333;
 	list-style: none;
 	text-align: center;
-	margin:30px 0;
+	margin:30px 0 20px;
 	padding:0;
 }
 
-main .benefits ul > li {
+.benefits ul > li {
 	vertical-align: middle;
 	display: inline-block;
 	padding:10px 10px;
 }
 
-main .benefits .rectangle {
+.benefits .rectangle {
+	text-align: center;
 	display: block;
-	margin: 0 auto;
+	margin: auto;
 }
 
 	/* text */
-main .benefits h2 {
+.benefits .group {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+		/* grid */
+.col {
+	display: block;
+	float:left;
+}
+
+		/* group */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+.benefits h2 {
 	font-family: 'Nunito', sans-serif, Helvetica;
 	font-size: 28px;
+	font-weight: 600;
 	margin: 10px 10px;
 }
 
-main .benefits ul div .feature1+.feature3 {
+.benefits .image {
+	text-align: center;
+}
+.benefits img {
+	max-width: 350px;
+}
+
+.benefits ul h2,  
+.benefits ul p {
 	text-align: right;
 }
 
 
+.benefits ul .dot {
+	padding-top: 18px;
+	text-align: center;
+	vertical-align: center;
+}
+.benefits ul .dot > img{
+	max-height: 20px;
+}
+.benefits .conclusion0 {
+	font-size: 28px;
+	color: #ffffff;
+	background-color: #333333;
+	text-align: center;
+	padding: 0;
+	max-width: 400px;
+	margin:50px auto 50px;
+}
+
+.benefits ul img {
+	text-align: right;
+}
+.benefits .conclusion1 {
+	font-size: 28px;
+	color: #ffffff;
+	background-color: #333333;
+	text-align: center;
+	padding: 0;
+	max-width: 800px;
+	margin:60px auto 0;
+}
+
+.benefits .conclusion2 {
+	font-size: 28px;
+	color: #ffffff;
+	background-color: #333333;
+	text-align: center;
+	padding: 0;
+	max-width: 400px;
+	margin: 10px auto 100px auto;
+}
+
+/* Testimonials */
+	/* intro */
+.testimonials .intro {
+	background-color: #333333;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	width:100%;
+}
+.testimonials .intro h1 {
+	color: #F8B133;
+	text-align: center;
+	font-size: 48px;
+}	
+.testimonials .intro p {
+	color: #ffffff;
+	text-align: center;
+}
+
+
+	/* quote */
+.testimonials .quote {
+	background-image: url(http://wx2.sinaimg.cn/large/6de62054gy1fe99vulbmvj21400ls1ff.jpg);
+	background-size: cover;
+	background-repeat: none;
+	text-align:center;
+	display:block;
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+.testimonials .quote-text {
+	margin-top: 500px;
+	background-color: #F8B133;
+	max-width: 600px;
+	padding:5px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+.testimonials blockquote {
+	text-align: left;
+}
+.testimonials .name {
+	padding-right: 10px;
+}
+
+/* pricing */
+.pricing h1 {
+	font-family: 'share tech mono', monospace, sans-serif, Helvetica;
+	font-size: 36px;
+	text-align: center;
+	margin:70px auto;
+}
+.pricing .box1 {
+	color:#ffffff;
+	background: #333333;
+	text-align: center;
+	padding: 20px 5px 100px;
+	max-width: 250px;
+	height: 250px;
+	margin: 8px auto;
+}
+.pricing .box3 {
+	color:#ffffff;
+	background: #333333;
+	text-align: center;
+	padding: 20px 5px 100px;
+	max-width: 250px;
+	height: 250px;
+	margin: 8px auto;
+}
+.pricing .box-middle {
+	background: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	box-shadow: 8px 5px;
+	text-align: center;
+	padding: 20px 5px 100px;
+	max-width: 250px;
+	height: 250px;
+	margin:auto;
+}
+.pricing h4 {
+	text-align: center;
+	font-size: 28px;
+	margin: 0px auto;
+}
+.pricing h2 {
+	text-align: center;
+	font-family: 'Nunito',sans-serif,Helvetica;
+	font-size: 48px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.pricing .price {
+	display: inline-block;
+}
+.pricing .per {
+	display: inline-block;
+	font-size: 15px;
+	margin-bottom: 40px;
+}
+.pricing ul {
+	list-style: none;
+	padding: 0 40px;
+}
+.pricing ul li {
+	text-align: left;
+	padding-bottom: 5px;
+}
+#userschoice {
+	text-align: center;
+	color: #ffffff;
+	background-color: #EC644B;
+	max-width: 150px;
+	margin:auto;
+}
+
+/* bottom sign up */
+.bottomsignup .container {
+	text-align: center;
+	margin-top: 50px;
+}
+.bottomsignup .container p {
+	text-align: center;
+	margin-top: 30px;
+}
+.bottomsignup .btn {
+	padding: 8px 80px;
+}
+/* question */
+.question {
+	text-align: center;
+	margin-top: 200px;
+}
+.question > .btn {
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	padding: 10px 25px;
+}
+
+
+/* footer */
+footer {
+	margin: 200px auto 10px;
+}
+footer .left-footer-block {
+	vertical-align: bottom;
+}
+
+footer nav {
+	vertical-align: bottom;
+}
+
+footer nav ul {
+	display: inline-block;
+	list-style: none;
+}
+footer nav ul li {
+	padding-top: 5px;
+}
+footer nav ul li a {
+	display: inline-block;
+}
 /* Media queries */
 @media (min-width: 768px) {
    .container {
@@ -238,6 +476,12 @@ main .benefits ul div .feature1+.feature3 {
 	header nav .one-third {
      width:29.33333%;
     }
+    .span_4_of_9 {
+    	width:96%;
+    }
+    .span_1_of_9 {
+    	display: none;
+    }
    
 	#navisignup {
 		display: none;
@@ -254,6 +498,12 @@ main .benefits ul div .feature1+.feature3 {
 	 .one-third {
      width:29.33333%;
     }
+    .span_4_of_9 {
+    	width:43.55%;
+    }
+    .span_1_of_9 {
+    	width: 9.688%;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -263,6 +513,12 @@ main .benefits ul div .feature1+.feature3 {
 	}
 	.one-third {
      width:29.33333%;
+    }
+    .span_4_of_9 {
+    	width:43.55%;
+    }
+    .span_1_of_9 {
+    	width: 9.688%;
     }
 	#navisignup {
 		display: inline;
@@ -283,6 +539,12 @@ main .benefits ul div .feature1+.feature3 {
    .one-fourth {
      width:21%;
    }
+   .span_4_of_9 {
+    	width:43.55%;
+    }
+    .span_1_of_9 {
+    	width: 9.688;
+    }
 	
 }
 
