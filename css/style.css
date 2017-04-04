@@ -1,5 +1,7 @@
 html, body {
 	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -103,12 +105,21 @@ header nav ul > li {
 	margin: 0 10px;
 	vertical-align: middle;
 }
+
+
 #signup {
 	margin: 0;
 }
 header nav ul > li.btn-outline {
 	padding: 3px 25px;
 	border:0.5px solid #FBB03B;
+}
+header nav ul > li.btn-outline a {
+	display: inline-block;     
+  position: relative;    
+  z-index: 1;     
+  padding: 2em;     
+  margin: -2em;
 }
 header nav ul > li.btn-outline:hover {
 	background:#FBB03B;
