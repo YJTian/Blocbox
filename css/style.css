@@ -175,7 +175,10 @@ header > .container {
 }
 
 /* Features */
-
+.benefits > .container {
+	width: 100%;
+	padding-left:0;
+}
 	/* icons */
 .benefits ul {
 	color: #333333;
@@ -194,15 +197,11 @@ header > .container {
 .benefits .rectangle {
 	text-align: center;
 	display: block;
+	padding: 0;
 	margin: auto;
 }
 
 	/* text */
-.benefits .group {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
 		/* grid */
 .col {
 	display: block;
@@ -215,6 +214,9 @@ header > .container {
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
 
+.benefits h3 {
+	margin: 0;
+}
 
 .benefits h2 {
 	font-family: 'Nunito', sans-serif, Helvetica;
@@ -251,14 +253,13 @@ header > .container {
 	text-align: center;
 	padding: 0;
 	max-width: 400px;
-	margin:50px auto 50px;
+	margin:80px auto;
 }
-
 .benefits ul img {
 	text-align: right;
 }
 .benefits .conclusion1 {
-	font-size: 28px;
+	font-size: 32px;
 	color: #ffffff;
 	background-color: #333333;
 	text-align: center;
@@ -268,7 +269,7 @@ header > .container {
 }
 
 .benefits .conclusion2 {
-	font-size: 28px;
+	font-size: 32px;
 	color: #ffffff;
 	background-color: #333333;
 	text-align: center;
@@ -281,10 +282,10 @@ header > .container {
 	/* intro */
 .testimonials .intro {
 	background-color: #333333;
-	padding-top: 10px;
-	padding-bottom: 30px;
+	padding:10px 0 30px 0; 
 	text-align: center;
 	width:100%;
+	margin:auto;
 }
 .testimonials .intro h1 {
 	color: #F8B133;
@@ -300,7 +301,7 @@ header > .container {
 	/* quote */
 .testimonials .quote {
 	background-image: url(http://wx2.sinaimg.cn/large/6de62054gy1fe99vulbmvj21400ls1ff.jpg);
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: none;
 	text-align:center;
 	display:block;
@@ -309,7 +310,7 @@ header > .container {
 	width: 100%;
 }
 .testimonials .quote-text {
-	margin-top: 500px;
+	margin-top: 40%;
 	background-color: #F8B133;
 	max-width: 600px;
 	padding:5px;
@@ -324,6 +325,9 @@ header > .container {
 }
 
 /* pricing */
+.pricing .container {
+	padding:0;
+}
 .pricing h1 {
 	font-family: 'share tech mono', monospace, sans-serif, Helvetica;
 	font-size: 36px;
@@ -384,6 +388,7 @@ header > .container {
 	list-style: none;
 	padding: 0 40px;
 }
+
 .pricing ul li {
 	text-align: left;
 	padding-bottom: 5px;
@@ -421,7 +426,10 @@ header > .container {
 	border-color: #333333;
 	padding: 10px 25px;
 }
-
+.question > .btn:hover {
+	color: #ffffff;
+	background-color: #333333;
+}
 
 /* footer */
 footer {
@@ -504,8 +512,49 @@ footer nav ul li a {
 		display: none;
 	}
 	 .jumbotron img {
-    	width: 50%;
+    	width: 70%;
     }
+    .benefits .container h2 {
+    	text-align: center;
+    }
+    .benefits .container p {
+    	text-align: center;
+    }
+    .testimonials .intro h1 {
+    	font-size: 36px;
+    }
+    .testimonials .intro p {
+    	font-size: 14px;
+    }
+    .testimonials .quote {
+    	background-size: 100%;
+    	background-repeat: none;
+    	width: 100%;
+    	height:auto;
+    }
+    .testimonials .container .quote-text {
+		background: rgb(248, 177, 51, .6);
+		max-width: 80%;
+		margin: 10px auto;
+		opacity: 0.85;
+	}
+	.pricing .container h1 {
+		font-size: 36px;
+		margin: 30px auto 20px;
+	}
+	.pricing .box1,
+	.pricing .box-middle,
+	.pricing .box3 {
+		max-height: 230px;
+	}
+	.pricing .box1,
+	.pricing .box3 {
+		color: #333333;
+		background-color: #ffffff;
+		border-color: #333333;
+		border-style: solid;
+		border-width: 1px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width: 992px) {
@@ -563,7 +612,7 @@ footer nav ul li a {
     	width:43.55%;
     }
     .span_1_of_9 {
-    	width: 9.688;
+    	width: 9.688%;
     }
 	
 }
