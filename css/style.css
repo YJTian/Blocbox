@@ -651,6 +651,10 @@ a, a:visited {
 .left-nav .site-logo img {
 	max-height: 40px;
 }
+.left-nav .items ul .activated {
+	color:#ffffff;
+	background-color: #333333;
+}
 .left-nav .items {
 	padding: 0 6%;
 }
@@ -842,7 +846,7 @@ a, a:visited {
      width:83%;
      position: relative;
    }
-   .content-item {
+c{
      width:90%;
      margin:0 2% 15px;
      float:left;
