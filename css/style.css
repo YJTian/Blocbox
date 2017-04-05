@@ -660,7 +660,7 @@ a, a:visited {
 	padding: 0;
 }
 .left-nav .items ul li {
-	margin: 15px 0 10px;
+	margin: 0px;
 }
 .left-nav .items ul li a {
 	text-decoration: none;
@@ -674,6 +674,16 @@ a, a:visited {
 	text-decoration: none;
 	background-color: #333333;
 	color:#ffffff;
+}
+.left-nav .items ul li a i {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.left-nav .items ul li a p {
+	text-decoration: none;
+	display: inline-block;
+	margin: 10px 0;
 }
 
 /* LEFT NAVBAR SETTINGS */
@@ -811,16 +821,59 @@ a, a:visited {
 	max-height: 100%;
 	width:auto;
 }
-/* Larger Mobile Devices */
- @media (min-width:460px) {
+
+/* Small Mobile Devices */
+@media only screen and (max-width:460px) {
+ 	.left-nav .items ul {
+ 		text-align: center;
+ 	}
+ 	.left-nav .items ul li a p {
+ 		display: none;
+ 	}
+ 	.left-nav .items ul li a i {
+ 		margin: 10px auto;
+ 	}
+ 	.rectangle_dash {
+ 		display: none;
+ 	}
    .content {
      padding:1.5em 1%;
      float:right;
-     width:90%;
+     width:83%;
      position: relative;
    }
    .content-item {
-     width:46%;
+     width:90%;
+     margin:0 2% 15px;
+     float:left;
+     display:block;
+   }
+ }
+
+/* Larger Mobile Devices */
+@media only screen and (min-width:460px) and (max-width:767px){
+ 	.left-nav .items ul {
+ 		text-align: center;
+ 	}
+ 	.left-nav .items ul li a p {
+ 		display: none;
+ 	}
+ 	.left-nav .items ul li a i {
+ 		margin: 10px auto;
+ 	}
+ 	.rectangle_dash {
+ 		display: none;
+ 	}
+}
+@media (min-width:460px) {
+   .content {
+     padding:1.5em 1%;
+     float:right;
+     width:83%;
+     position: relative;
+   }
+   .content-item {
+     width:45%;
      margin:0 2% 15px;
      float:left;
      display:block;
@@ -829,17 +882,18 @@ a, a:visited {
 /* Tablets */
  @media (min-width:768px) {
    .content {
-     padding:1.5em 5%;
+     padding:1.5em 2%;
      float:right;
-     width:90%;
+     width:78.33333333%;
      position: relative;
    }
    .content > .container {
      width:700px;
+     margin-righ: 0;
    }
    .content-item {
-     width:31.33333%;
-     margin:0 1% 15px;
+     width:49%;
+     margin:0 0.5% 15px;
    }
  }
 /* Laptops and Desktops */
