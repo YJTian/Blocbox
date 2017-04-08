@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/font-awesome.css">
+   <link rel="stylesheet" href="css/dropit.css">
 
    <!-- Images -->
    <link rel="stylesheet" type="text/css" href="images.html">
@@ -24,48 +25,67 @@
       <a href="#" class="site-logo"><img src="images/dash/logo.svg" /></a>
       <div class="items">
       <ul>
-         <li><a href="#"><i class="fa fa-cubes"></i> All Items</a></li>
-         <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
-         <li><a href="images.html" class="image_active"><i class="fa fa-file-image-o"></i> Images</a></li>
-         <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
-         <li><a href="#"><i class="fa fa-heart"></i> Favorite</a></li>
-         <li><a href="#"><i class="fa fa-share"></i> Shared</a></li>
+         <li><a href="dashboard.html"><i class="fa fa-cubes"></i> <p>All</p></a></li>
+         <li><a href="#"><i class="fa fa-file-o"></i> <p>Notes</p></a></li>
+         <li class="activated"><a href="images.html"><i class="fa fa-file-image-o"></i> <p>Images</p></a></li>
+         <li><a href="#"><i class="fa fa-link"></i> <p>Links</p></a></li>
+         <li><a href="#"><i class="fa fa-heart"></i> <p>Favorite</p></a></li>
+         <li><a href="#"><i class="fa fa-share"></i> <p>Shared</p></a></li>
       </ul>
-      <div class="container rectangle_dash">
-         <svg width="100" height="4">
-            <rect width="100" height="4" style="fill:#333333;" />
-         </svg>
-      </div>
+      <hr>
       <ul>
-         <li><a href="#"><i class="fa fa-plus"></i> Add Box</a></li>
+         <li class="addbox"><a href="#"><i class="fa fa-plus"></i> <p> Box</p></a></li>
       </ul>
-      <div class="container rectangle_dash">
-         <svg width="100" height="4">
-            <rect width="100" height="4" style="fill:#333333;" />
-         </svg>
-      </div>
+      <hr>
       <ul>
-         <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+         <li><a href="#"><i class="fa fa-trash-o"></i> <p>Trash</p></a></li>
       </ul>
       </div>
       <div class="settings">
          <img src="http://wx3.sinaimg.cn/large/6de62054gy1febgp6te6nj20sg0sgtgj.jpg" class="image">
-         <div class="overlay">
-            <div class="text"><a href=“”><i class="fa fa-cog fa-2x"></i></a></div>
-         </div>
+         <p>Josh Ipsum</p>
+         <ul class="menu">
+            <li>
+               <a href=“”><i class="fa fa-cog"></i></a>
+               <ul>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Log Out</a></li>
+               </ul>
+            </li>
+         </ul>
       </div>
    </nav>
    <main role="main">
       <!-- Benefits -->
       <section class="content">
+         <div class="topbar">
+            <div>
+               <i class="fa fa-search"></i>
+               <div class="search">
+                  <input type="text" name="search" placeholder=" SEARCH...">
+               </div>
+            </div>
+            <div class="functions">
+               <ul>
+                  <li><a href="#" class="btn_top"><h3>SELECT</h3></a></li>
+                  <li><a href="#" class="btn_top"><h3>SORT BY</h3></a></li>
+               </ul>
+            </div>
+         </div>
          <div class="container">
-            <div class="content-item header">
-               <div class="item-box">
-                  <ul>
-                     <li><a href="#" class="btn"><i class="fa fa-plus"></i>Add Note</a></li>
-                     <li><a href="#" class="btn"><i class="fa fa-plus"></i>Add Image</a></li>
-                     <li><a href="#" class="btn"><i class="fa fa-plus"></i>Add Link</a></li>
-                  </ul>
+            <div class="content-item">
+               <div class="item-box header">
+                  <table>
+                     <tr>
+                        <td><a href="#" class="btn"><i class="fa fa-plus"></i> <p>Note</p></a></td>
+                     </tr>
+                     <tr>
+                        <td><a href="#" class="btn"><i class="fa fa-plus"></i> <p>Image</p></a></td>
+                     </tr>
+                     <tr>
+                        <td><a href="#" class="btn"><i class="fa fa-plus"></i> <p>Link</p></a></td>
+                     </tr>
+                  </table>
                </div>
             </div>
             <div class="content-item">
@@ -127,6 +147,12 @@
          </div>
       </section>
    </main>
+   <script src="js/jquery-3.2.0.min.js"></script>
+   <script src="js/dropit.js"></script>
+   <script type="text/javascript">
+      $(".menu").dropit();
+   </script>
+</body>
 </body>
 
 
